@@ -84,9 +84,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const PasswordManagementBarmanWidget(),
         ),
         FFRoute(
-          name: 'images',
-          path: '/images',
-          builder: (context, params) => const ImagesWidget(),
+          name: 'images_barman',
+          path: '/imagesBarman',
+          builder: (context, params) => const ImagesBarmanWidget(),
         ),
         FFRoute(
           name: 'Reservation_settings_barman',

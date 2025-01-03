@@ -87,10 +87,19 @@ class _ReservationsBarmanWidgetState extends State<ReservationsBarmanWidget> {
                               ),
                             ],
                           ),
-                          Icon(
-                            Icons.settings_sharp,
-                            color: FlutterFlowTheme.of(context).primary,
-                            size: 40.0,
+                          InkWell(
+                            splashColor: Colors.transparent,
+                            focusColor: Colors.transparent,
+                            hoverColor: Colors.transparent,
+                            highlightColor: Colors.transparent,
+                            onTap: () async {
+                              context.pushNamed('Reservation_settings_barman');
+                            },
+                            child: Icon(
+                              Icons.settings_sharp,
+                              color: FlutterFlowTheme.of(context).primary,
+                              size: 40.0,
+                            ),
                           ),
                         ],
                       ),

@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'images_widget.dart' show ImagesWidget;
+import 'images_barman_widget.dart' show ImagesBarmanWidget;
 import 'package:flutter/material.dart';
 
-class ImagesModel extends FlutterFlowModel<ImagesWidget> {
+class ImagesBarmanModel extends FlutterFlowModel<ImagesBarmanWidget> {
   @override
   void initState(BuildContext context) {}
 

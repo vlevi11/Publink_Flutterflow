@@ -143,7 +143,7 @@ class _EventsBarmanWidgetState extends State<EventsBarmanWidget> {
                                   topRight: Radius.circular(10.0),
                                 ),
                                 child: Image.network(
-                                  'https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwyMnx8ZXZlbnR8ZW58MHx8fHwxNzM1MjY3MTUyfDA&ixlib=rb-4.0.3&q=80&w=1080',
+                                  'https://images.unsplash.com/photo-1485872299829-c673f5194813?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwzfHxwYXJ0eXxlbnwwfHx8fDE3MzU4NTI4NjJ8MA&ixlib=rb-4.0.3&q=80&w=1080',
                                   width: MediaQuery.sizeOf(context).width * 1.0,
                                   height: 180.0,
                                   fit: BoxFit.cover,
@@ -156,10 +156,11 @@ class _EventsBarmanWidgetState extends State<EventsBarmanWidget> {
                                   gradient: LinearGradient(
                                     colors: [
                                       Color(0xE6000000),
-                                      Color(0xCC000000),
+                                      Color(0x1A000000),
+                                      Colors.transparent,
                                       Colors.transparent
                                     ],
-                                    stops: [0.2, 0.3, 1.0],
+                                    stops: [0.0, 0.26, 0.31, 1.0],
                                     begin: AlignmentDirectional(0.0, 1.0),
                                     end: AlignmentDirectional(0, -1.0),
                                   ),

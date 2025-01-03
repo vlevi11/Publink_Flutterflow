@@ -13,8 +13,8 @@ export '/b_a_r_m_a_n_interfaces/sub_folders/forgot_password_barman/forgot_passwo
     show ForgotPasswordBarmanWidget;
 export '/b_a_r_m_a_n_interfaces/sub_folders/password_management_barman/password_management_barman_widget.dart'
     show PasswordManagementBarmanWidget;
-export '/b_a_r_m_a_n_interfaces/sub_folders/images/images_widget.dart'
-    show ImagesWidget;
+export '/b_a_r_m_a_n_interfaces/sub_folders/images_barman/images_barman_widget.dart'
+    show ImagesBarmanWidget;
 export '/reservation_settings_barman/reservation_settings_barman_widget.dart'
     show ReservationSettingsBarmanWidget;
 export '/b_a_r_m_a_n_interfaces/sub_folders/event_add_barman/event_add_barman_widget.dart'

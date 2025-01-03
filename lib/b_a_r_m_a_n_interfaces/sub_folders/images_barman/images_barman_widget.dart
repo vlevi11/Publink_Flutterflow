@@ -2,25 +2,25 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'images_model.dart';
-export 'images_model.dart';
+import 'images_barman_model.dart';
+export 'images_barman_model.dart';
 
-class ImagesWidget extends StatefulWidget {
-  const ImagesWidget({super.key});
+class ImagesBarmanWidget extends StatefulWidget {
+  const ImagesBarmanWidget({super.key});
 
   @override
-  State<ImagesWidget> createState() => _ImagesWidgetState();
+  State<ImagesBarmanWidget> createState() => _ImagesBarmanWidgetState();
 }
 
-class _ImagesWidgetState extends State<ImagesWidget> {
-  late ImagesModel _model;
+class _ImagesBarmanWidgetState extends State<ImagesBarmanWidget> {
+  late ImagesBarmanModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => ImagesModel());
+    _model = createModel(context, () => ImagesBarmanModel());
   }
 
   @override
