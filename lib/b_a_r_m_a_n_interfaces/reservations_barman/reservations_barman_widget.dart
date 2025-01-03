@@ -2,26 +2,27 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'reservations_model.dart';
-export 'reservations_model.dart';
+import 'reservations_barman_model.dart';
+export 'reservations_barman_model.dart';
 
-class ReservationsWidget extends StatefulWidget {
+class ReservationsBarmanWidget extends StatefulWidget {
   /// for users - showcasing event cards with search filter
-  const ReservationsWidget({super.key});
+  const ReservationsBarmanWidget({super.key});
 
   @override
-  State<ReservationsWidget> createState() => _ReservationsWidgetState();
+  State<ReservationsBarmanWidget> createState() =>
+      _ReservationsBarmanWidgetState();
 }
 
-class _ReservationsWidgetState extends State<ReservationsWidget> {
-  late ReservationsModel _model;
+class _ReservationsBarmanWidgetState extends State<ReservationsBarmanWidget> {
+  late ReservationsBarmanModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => ReservationsModel());
+    _model = createModel(context, () => ReservationsBarmanModel());
   }
 
   @override

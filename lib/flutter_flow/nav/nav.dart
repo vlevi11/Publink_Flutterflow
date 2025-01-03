@@ -41,57 +41,47 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, _) => const NavBarPage(),
         ),
         FFRoute(
-          name: 'HomePage',
-          path: '/homePage',
+          name: 'HomePage_barman',
+          path: '/homePageBarman',
           builder: (context, params) => params.isEmpty
-              ? const NavBarPage(initialPage: 'HomePage')
-              : const HomePageWidget(),
+              ? const NavBarPage(initialPage: 'HomePage_barman')
+              : const HomePageBarmanWidget(),
         ),
         FFRoute(
-          name: 'Events',
-          path: '/events',
+          name: 'Events_barman',
+          path: '/eventsBarman',
           builder: (context, params) => params.isEmpty
-              ? const NavBarPage(initialPage: 'Events')
-              : const EventsWidget(),
+              ? const NavBarPage(initialPage: 'Events_barman')
+              : const EventsBarmanWidget(),
         ),
         FFRoute(
-          name: 'Reservations',
-          path: '/reservations',
+          name: 'Reservations_barman',
+          path: '/reservationsBarman',
           builder: (context, params) => params.isEmpty
-              ? const NavBarPage(initialPage: 'Reservations')
-              : const ReservationsWidget(),
+              ? const NavBarPage(initialPage: 'Reservations_barman')
+              : const ReservationsBarmanWidget(),
         ),
         FFRoute(
-          name: 'Profile',
-          path: '/profile',
+          name: 'Profile_barman',
+          path: '/profileBarman',
           builder: (context, params) => params.isEmpty
-              ? const NavBarPage(initialPage: 'Profile')
-              : const ProfileWidget(),
+              ? const NavBarPage(initialPage: 'Profile_barman')
+              : const ProfileBarmanWidget(),
         ),
         FFRoute(
-          name: 'Notification_user',
-          path: '/notificationUser',
-          builder: (context, params) => const NotificationUserWidget(),
+          name: 'Notification_barman',
+          path: '/notificationBarman',
+          builder: (context, params) => const NotificationBarmanWidget(),
         ),
         FFRoute(
-          name: 'forgot_password_user',
-          path: '/forgotPasswordUser',
-          builder: (context, params) => const ForgotPasswordUserWidget(),
+          name: 'forgot_password_barman',
+          path: '/forgotPasswordBarman',
+          builder: (context, params) => const ForgotPasswordBarmanWidget(),
         ),
         FFRoute(
-          name: 'password_management_user',
-          path: '/passwordManagementUser',
-          builder: (context, params) => const PasswordManagementUserWidget(),
-        ),
-        FFRoute(
-          name: 'Event_details_user',
-          path: '/eventDetailsUser',
-          builder: (context, params) => const EventDetailsUserWidget(),
-        ),
-        FFRoute(
-          name: 'bar_details_proba1',
-          path: '/barDetailsProba1',
-          builder: (context, params) => const BarDetailsProba1Widget(),
+          name: 'password_management_barman',
+          path: '/passwordManagementBarman',
+          builder: (context, params) => const PasswordManagementBarmanWidget(),
         ),
         FFRoute(
           name: 'images',
@@ -99,9 +89,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const ImagesWidget(),
         ),
         FFRoute(
-          name: 'Reservation_settings',
-          path: '/reservationSettings',
-          builder: (context, params) => const ReservationSettingsWidget(),
+          name: 'Reservation_settings_barman',
+          path: '/reservationSettingsBarman',
+          builder: (context, params) => const ReservationSettingsBarmanWidget(),
+        ),
+        FFRoute(
+          name: 'Event_add_barman',
+          path: '/eventAddBarman',
+          builder: (context, params) => const EventAddBarmanWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

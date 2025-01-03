@@ -1,21 +1,21 @@
 // Export pages
-export '/b_a_r_m_a_n_interfaces/home_page/home_page_widget.dart'
-    show HomePageWidget;
-export '/b_a_r_m_a_n_interfaces/events/events_widget.dart' show EventsWidget;
-export '/b_a_r_m_a_n_interfaces/reservations/reservations_widget.dart'
-    show ReservationsWidget;
-export '/b_a_r_m_a_n_interfaces/profile/profile_widget.dart' show ProfileWidget;
-export '/b_a_r_m_a_n_interfaces/sub_folders/notification_user/notification_user_widget.dart'
-    show NotificationUserWidget;
-export '/b_a_r_m_a_n_interfaces/sub_folders/forgot_password_user/forgot_password_user_widget.dart'
-    show ForgotPasswordUserWidget;
-export '/b_a_r_m_a_n_interfaces/sub_folders/password_management_user/password_management_user_widget.dart'
-    show PasswordManagementUserWidget;
-export '/b_a_r_m_a_n_interfaces/sub_folders/event_details_user/event_details_user_widget.dart'
-    show EventDetailsUserWidget;
-export '/b_a_r_m_a_n_interfaces/sub_folders/bar_details_proba1/bar_details_proba1_widget.dart'
-    show BarDetailsProba1Widget;
+export '/b_a_r_m_a_n_interfaces/home_page_barman/home_page_barman_widget.dart'
+    show HomePageBarmanWidget;
+export '/b_a_r_m_a_n_interfaces/events_barman/events_barman_widget.dart'
+    show EventsBarmanWidget;
+export '/b_a_r_m_a_n_interfaces/reservations_barman/reservations_barman_widget.dart'
+    show ReservationsBarmanWidget;
+export '/b_a_r_m_a_n_interfaces/profile_barman/profile_barman_widget.dart'
+    show ProfileBarmanWidget;
+export '/b_a_r_m_a_n_interfaces/sub_folders/notification_barman/notification_barman_widget.dart'
+    show NotificationBarmanWidget;
+export '/b_a_r_m_a_n_interfaces/sub_folders/forgot_password_barman/forgot_password_barman_widget.dart'
+    show ForgotPasswordBarmanWidget;
+export '/b_a_r_m_a_n_interfaces/sub_folders/password_management_barman/password_management_barman_widget.dart'
+    show PasswordManagementBarmanWidget;
 export '/b_a_r_m_a_n_interfaces/sub_folders/images/images_widget.dart'
     show ImagesWidget;
-export '/reservation_settings/reservation_settings_widget.dart'
-    show ReservationSettingsWidget;
+export '/reservation_settings_barman/reservation_settings_barman_widget.dart'
+    show ReservationSettingsBarmanWidget;
+export '/b_a_r_m_a_n_interfaces/sub_folders/event_add_barman/event_add_barman_widget.dart'
+    show EventAddBarmanWidget;

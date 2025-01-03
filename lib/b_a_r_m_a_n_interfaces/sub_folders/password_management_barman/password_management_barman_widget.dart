@@ -4,27 +4,27 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'password_management_user_model.dart';
-export 'password_management_user_model.dart';
+import 'password_management_barman_model.dart';
+export 'password_management_barman_model.dart';
 
-class PasswordManagementUserWidget extends StatefulWidget {
-  const PasswordManagementUserWidget({super.key});
+class PasswordManagementBarmanWidget extends StatefulWidget {
+  const PasswordManagementBarmanWidget({super.key});
 
   @override
-  State<PasswordManagementUserWidget> createState() =>
-      _PasswordManagementUserWidgetState();
+  State<PasswordManagementBarmanWidget> createState() =>
+      _PasswordManagementBarmanWidgetState();
 }
 
-class _PasswordManagementUserWidgetState
-    extends State<PasswordManagementUserWidget> {
-  late PasswordManagementUserModel _model;
+class _PasswordManagementBarmanWidgetState
+    extends State<PasswordManagementBarmanWidget> {
+  late PasswordManagementBarmanModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => PasswordManagementUserModel());
+    _model = createModel(context, () => PasswordManagementBarmanModel());
 
     _model.emailAddressTextController1 ??= TextEditingController();
     _model.emailAddressFocusNode1 ??= FocusNode();
@@ -163,7 +163,7 @@ class _PasswordManagementUserWidgetState
                       hoverColor: Colors.transparent,
                       highlightColor: Colors.transparent,
                       onTap: () async {
-                        context.pushNamed('forgot_password_user');
+                        context.pushNamed('forgot_password_barman');
                       },
                       child: Row(
                         mainAxisSize: MainAxisSize.max,

@@ -4,27 +4,28 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:badges/badges.dart' as badges;
 import 'package:flutter/material.dart';
-import 'reservation_settings_model.dart';
-export 'reservation_settings_model.dart';
+import 'reservation_settings_barman_model.dart';
+export 'reservation_settings_barman_model.dart';
 
-class ReservationSettingsWidget extends StatefulWidget {
-  const ReservationSettingsWidget({super.key});
+class ReservationSettingsBarmanWidget extends StatefulWidget {
+  const ReservationSettingsBarmanWidget({super.key});
 
   @override
-  State<ReservationSettingsWidget> createState() =>
-      _ReservationSettingsWidgetState();
+  State<ReservationSettingsBarmanWidget> createState() =>
+      _ReservationSettingsBarmanWidgetState();
 }
 
-class _ReservationSettingsWidgetState extends State<ReservationSettingsWidget>
+class _ReservationSettingsBarmanWidgetState
+    extends State<ReservationSettingsBarmanWidget>
     with TickerProviderStateMixin {
-  late ReservationSettingsModel _model;
+  late ReservationSettingsBarmanModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => ReservationSettingsModel());
+    _model = createModel(context, () => ReservationSettingsBarmanModel());
 
     _model.tabBarController = TabController(
       vsync: this,

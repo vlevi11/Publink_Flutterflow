@@ -1,9 +1,10 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'password_management_user_widget.dart' show PasswordManagementUserWidget;
+import 'password_management_barman_widget.dart'
+    show PasswordManagementBarmanWidget;
 import 'package:flutter/material.dart';
 
-class PasswordManagementUserModel
-    extends FlutterFlowModel<PasswordManagementUserWidget> {
+class PasswordManagementBarmanModel
+    extends FlutterFlowModel<PasswordManagementBarmanWidget> {
   ///  State fields for stateful widgets in this page.
 
   // State field(s) for emailAddress widget.

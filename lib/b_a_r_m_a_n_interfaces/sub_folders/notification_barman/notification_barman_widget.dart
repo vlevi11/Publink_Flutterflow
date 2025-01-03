@@ -1,25 +1,26 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'notification_user_model.dart';
-export 'notification_user_model.dart';
+import 'notification_barman_model.dart';
+export 'notification_barman_model.dart';
 
-class NotificationUserWidget extends StatefulWidget {
-  const NotificationUserWidget({super.key});
+class NotificationBarmanWidget extends StatefulWidget {
+  const NotificationBarmanWidget({super.key});
 
   @override
-  State<NotificationUserWidget> createState() => _NotificationUserWidgetState();
+  State<NotificationBarmanWidget> createState() =>
+      _NotificationBarmanWidgetState();
 }
 
-class _NotificationUserWidgetState extends State<NotificationUserWidget> {
-  late NotificationUserModel _model;
+class _NotificationBarmanWidgetState extends State<NotificationBarmanWidget> {
+  late NotificationBarmanModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => NotificationUserModel());
+    _model = createModel(context, () => NotificationBarmanModel());
   }
 
   @override

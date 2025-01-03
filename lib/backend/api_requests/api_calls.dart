@@ -27,6 +27,32 @@ class EsemenyekAPICall {
   }
 }
 
+class EventUploadCall {
+  static Future<ApiCallResponse> call({
+    String? eventName = '',
+    String? eventDescription = '',
+    String? eventDateStart = '',
+  }) async {
+    return ApiManager.instance.makeApiCall(
+      callName: 'EventUpload',
+      apiUrl: 'https://publink.alsohaz.hu/api/event',
+      callType: ApiCallType.POST,
+      headers: {
+        'Authorization':
+            'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJsZXZpMTFAcHVibGluay5odSIsImV4cCI6MTczNTg1OTQzOCwiaXNzIjoiQWxzb2hhei5odSBLZnQiLCJhdWQiOiJQdWJsaW5rIHVzZXJzIn0.D_-qQiUfyI0rMwcZB_MGhfnaOAEi5uo6rBnodMIJgwI',
+      },
+      params: {},
+      bodyType: BodyType.JSON,
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+      isStreamingApi: false,
+      alwaysAllowBody: false,
+    );
+  }
+}
+
 class ApiPagingParams {
   int nextPageNumber = 0;
   int numItems = 0;

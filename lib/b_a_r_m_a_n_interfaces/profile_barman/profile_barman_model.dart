@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'reservations_widget.dart' show ReservationsWidget;
+import 'profile_barman_widget.dart' show ProfileBarmanWidget;
 import 'package:flutter/material.dart';
 
-class ReservationsModel extends FlutterFlowModel<ReservationsWidget> {
+class ProfileBarmanModel extends FlutterFlowModel<ProfileBarmanWidget> {
   @override
   void initState(BuildContext context) {}
 

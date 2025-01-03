@@ -4,20 +4,20 @@ import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'home_page_model.dart';
-export 'home_page_model.dart';
+import 'home_page_barman_model.dart';
+export 'home_page_barman_model.dart';
 
-class HomePageWidget extends StatefulWidget {
+class HomePageBarmanWidget extends StatefulWidget {
   /// proba sablon
-  const HomePageWidget({super.key});
+  const HomePageBarmanWidget({super.key});
 
   @override
-  State<HomePageWidget> createState() => _HomePageWidgetState();
+  State<HomePageBarmanWidget> createState() => _HomePageBarmanWidgetState();
 }
 
-class _HomePageWidgetState extends State<HomePageWidget>
+class _HomePageBarmanWidgetState extends State<HomePageBarmanWidget>
     with TickerProviderStateMixin {
-  late HomePageModel _model;
+  late HomePageBarmanModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -26,7 +26,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => HomePageModel());
+    _model = createModel(context, () => HomePageBarmanModel());
 
     animationsMap.addAll({
       'textOnPageLoadAnimation': AnimationInfo(

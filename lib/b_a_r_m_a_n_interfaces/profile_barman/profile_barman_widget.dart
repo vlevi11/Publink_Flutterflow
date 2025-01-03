@@ -4,25 +4,25 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'profile_model.dart';
-export 'profile_model.dart';
+import 'profile_barman_model.dart';
+export 'profile_barman_model.dart';
 
-class ProfileWidget extends StatefulWidget {
-  const ProfileWidget({super.key});
+class ProfileBarmanWidget extends StatefulWidget {
+  const ProfileBarmanWidget({super.key});
 
   @override
-  State<ProfileWidget> createState() => _ProfileWidgetState();
+  State<ProfileBarmanWidget> createState() => _ProfileBarmanWidgetState();
 }
 
-class _ProfileWidgetState extends State<ProfileWidget> {
-  late ProfileModel _model;
+class _ProfileBarmanWidgetState extends State<ProfileBarmanWidget> {
+  late ProfileBarmanModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => ProfileModel());
+    _model = createModel(context, () => ProfileBarmanModel());
   }
 
   @override
@@ -84,7 +84,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                 ),
                 onPressed: () async {
                   context.pushNamed(
-                    'Notification_user',
+                    'Notification_barman',
                     extra: <String, dynamic>{
                       kTransitionInfoKey: const TransitionInfo(
                         hasTransition: true,
@@ -396,7 +396,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
-                    context.pushNamed('password_management_user');
+                    context.pushNamed('password_management_barman');
                   },
                   child: Container(
                     width: double.infinity,
